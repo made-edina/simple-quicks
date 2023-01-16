@@ -1,0 +1,180 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  margin: 0;
+  background-image: url(../public/BKG.png);
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+p {
+  margin: 0;
+}
+
+.menu-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 68px;
+}
+
+/* .messaging, .todolist {
+  width: 60px;
+} */
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.load-spinner {
+  width: 60px;
+  height: 60px;
+  border-width: 10px;
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4F4F4F;
+}
+
+/* TO-DO WINDOW */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 734px;
+    width: 734px;
+    /* position: absolute;
+    bottom: 70px;
+    right: 40px; */
+  }
+}
+
+.modal-content {
+  height: 537px;
+  padding: 24px 32px;
+}
+
+.modal-header, .modal-body {
+  padding: 0;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.mytask-button, .mytask-button:hover {
+  background-color: #FFFFFF;
+  color: #4F4F4F;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  margin-left: 85px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: #FFFFFF;
+  color: #4F4F4F;
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+
+/* TO-DO-LIST */
+.input-title {
+  /* width: 380px; */
+  height: 40px;
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+
+.todo-title {
+  font-weight: 600;
+  align-self: center;
+  display: flex;
+}
+
+.todo-title, .description {
+  font-size: 14.5px;
+}
+
+.todo-date, .todo-days {
+  font-size: 13px;
+}
+
+.todo-days {
+  color: red;
+}
+
+
+.accordion-header {
+  padding: 22px 0;
+}
+
+.accordion-button {
+  padding: 0;
+}
+
+span, img {
+  margin-right: 10px;
+  /* float: right; */
+}
+
+.card {
+  border: none;
+  border-bottom: 1px solid #828282;
+  border-radius: 0%;
+  padding: 10px 0;
+}
+.card-header {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.collapse-icon {
+  width: 20px;
+  align-self: flex-start;
+  display: flex;
+
+}
+.more {
+  width: 20px;
+}
+
+.delete {
+  color: red;
+}
+
+input[type="checkbox"] {
+  background-color: #fff;
+  /* margin-right: 22px; */
+  width: 16px;
+  height: 16px;
+  /* border: 2px solid currentColor; */
+  /* border-radius: 0.15em;
+  transform: translateY(-0.075em); */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fff !important;
+  color: #828282 !important;
+}
+
+div.card-body {
+  padding: 16px 48px;
+}
+
+.schedule-icon, .desc-icon {
+  width: 15px;
+}
+
+.description {
+  margin-top: 13px;
+}
